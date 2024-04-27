@@ -9,9 +9,9 @@ export const Storie = ({_id,Image,Title,Status}) => {
         navigate("/stories/" + _id);
     };
     return (
-        <div className='w-100 h-100 py-1 cursor-pointer ' onClick={onCardClick}  >
+        <div className='w-100  py-1 cursor-pointer ' style={{height: "350px"}} onClick={onCardClick}  >
             <Card className='p-2 h-100' style={{width: '100%',background: "linear-gradient(90deg,rgb(48, 48, 207),rgb(11, 180, 248))"}}>
-                <Card.Img variant="top" className=' rounded-2' src={`https://ik.imagekit.io/dev24/${Image?.[0]}`} />
+                <Card.Img variant="top" className=' rounded-2 h-50' src={`https://ik.imagekit.io/dev24/${Image?.[0]}`} />
                 <Card.Body style={{minHeight: "50px"}}>
                     <Card.Title style={{textAlign: "unset"}}>{Title}</Card.Title>
 

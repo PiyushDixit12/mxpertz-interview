@@ -69,7 +69,7 @@ export const StoreDetail = () => {
 
             {storyDetail?.Wordexplore?.length ? <div className=" row px-5  ">
                 <div className="col-12 col-lg-4 p-2">
-                    <div className=" p-3 rounded-3" style={{border: "2px dashed rgb(48, 48, 207)"}}>
+                    <div className=" p-3 rounded-3" style={{border: "2px dashed rgb(48, 48, 207)",backgroundColor: "#242344"}}>
                         <div className=" py-2 d-flex justify-content-around text-white"> <h3 style={{color: "rgb(48, 48, 207)",}}>{bigStory?.Storytitle} <sup className="text-white">(Noun)</sup></h3> </div>
 
                         <div className=" text-white text-wrap text-break">

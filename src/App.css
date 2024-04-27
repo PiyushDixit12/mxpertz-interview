@@ -6,6 +6,22 @@
   /* color: rgb(103, 255, 83); */
 }
 
+.btn-outline-custom{
+border: 2px solid rgb(48, 48, 207)!important;
+background: transparent !important;
+}
+.text-white{
+  color: white !important;
+}
+.text-gradient-custom{
+
+            font-size: 72px;
+            background: linear-gradient(90deg,rgb(3, 3, 110),rgb(48, 48, 207), rgb(255, 255, 255));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+
 .cursor-pointer{
   cursor: pointer !important;
 }

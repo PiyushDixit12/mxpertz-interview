@@ -4,7 +4,9 @@
 
 export async function fetchStoriesData() {
 
-    let data = await fetch("https://child.onrender.com/api/sciencefiction");
+    let data = await fetch("https://child.onrender.com/api/sciencefiction").catch(err => {
+        return err;
+    });
 
     data = await data.json();
     console.log(" data is :- ",data);

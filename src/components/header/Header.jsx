@@ -2,7 +2,8 @@
 import {Container,Nav,Navbar,Button,Offcanvas} from "react-bootstrap"
 
 
-export const Header = () => {
+// eslint-disable-next-line react/prop-types
+export const Header = ({details}) => {
     return (
         <Navbar key={"sm"} expand={"sm"} variant="transparent" fixed="top" className="  mb-3 bg-transparent">
             <Container >
@@ -25,11 +26,11 @@ export const Header = () => {
                         <Nav className=" justify-content-end justify-content-lg-center  flex-grow-1 pe-3">
                             <Nav.Link className=" text-white fs-5" href="#action1">Home</Nav.Link>
                             <Nav.Link className=" text-white fs-5" href="#action2">Link</Nav.Link>
-                            <Nav.Link className=" fs-5 fw-bold " style={{color: "#000421"}} href="#action3">genrec</Nav.Link>
+                            <Nav.Link className=" fs-5 fw-bold " style={{color: "rgb(48, 48, 207)"}} href="#action3">genre</Nav.Link>
 
                         </Nav>
 
-                        <Button className=" btn-custom-gradient  rounded-5 px-4 py-1" >Search</Button>
+                        <Button className={` ${details ? "btn-outline-custom" : "btn-custom-gradient"}  rounded-5 px-4 py-1`} >Search</Button>
 
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>

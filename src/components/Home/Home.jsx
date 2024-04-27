@@ -1,12 +1,14 @@
 import {Batch} from "../Batch/Batch";
 import {AllStories} from "../allstories/AllStories";
 import wave from '../../assets/wave.svg'
-import galaxy from '../../assets/galaxy.jpg'
+import galaxy from '../../assets/galaxy two.jpg'
 import {Header} from "../header/Header";
 
 
 
 export const Home = () => {
+    // data for Batch show on home page first  =>
+
     const data = [
         {
             title: "New",
@@ -47,6 +49,7 @@ export const Home = () => {
             <div style={{backgroundColor: "#00042a"}}>
 
                 <div className="px-5 py-5 w-100">
+                    {/* all stories to show data  */}
                     <AllStories />
                 </div>
             </div>

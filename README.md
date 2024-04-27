@@ -1,8 +1,18 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# MXPERTZ Info-labs INTERVIEW PROJECT
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+this project is created for interview test of Mxpertz info-labs. and this project is fully responsive and i have try my best to create webpage  design good and simple to read and debug code.  
+
+view project online on  https://mxpertz-interview.netlify.app
+
+
+# setup to local device
+
+git clone  this repo 
+
+install node modules 
+
+ start project => npm run dev
+
+

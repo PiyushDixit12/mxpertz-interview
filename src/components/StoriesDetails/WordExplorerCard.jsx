@@ -1,5 +1,7 @@
 import {Card} from "react-bootstrap"
 
+// component to  show the word explore cards
+
 // eslint-disable-next-line react/prop-types
 export const WordExplorerCard = ({Storyimage,Storyttext}) => {
     return (

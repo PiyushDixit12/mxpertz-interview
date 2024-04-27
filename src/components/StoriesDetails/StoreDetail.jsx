@@ -67,7 +67,7 @@ export const StoreDetail = () => {
                 </div>
             </div>
 
-            <div className=" row px-5  ">
+            {storyDetail?.Wordexplore?.length ? <div className=" row px-5  ">
                 <div className="col-12 col-lg-4 p-2">
                     <div className=" p-3 rounded-3" style={{border: "2px dashed rgb(48, 48, 207)"}}>
                         <div className=" py-2 d-flex justify-content-around text-white"> <h3 style={{color: "rgb(48, 48, 207)",}}>{bigStory?.Storytitle} <sup className="text-white">(Noun)</sup></h3> </div>
@@ -82,13 +82,13 @@ export const StoreDetail = () => {
 
                         <div className="synonyms d-flex justify-content-around">
                             <span className=" d-inline-block pe-3" style={{color: "green"}}> Synonyms :</span>
-                            <span className="text-white">{bigStory?.Synonyms}</span>
+                            <span className="text-white">{bigStory?.Synonyms ?? "not present"}</span>
 
                         </div>
 
                         <div className="anonyms d-flex justify-content-around">
                             <span className=" d-inline-block pe-3" style={{color: "pink"}}> antnonyms :</span>
-                            <span className=" text-white">{bigStory?.Antonyms}</span>
+                            <span className=" text-white">{bigStory?.Antonyms ?? "not present"}</span>
 
                         </div>
 
@@ -105,7 +105,10 @@ export const StoreDetail = () => {
                     }
 
                 </div>
-            </div>
+            </div> :
+                <div className=" row d-flex justify-content-center align-items-center w-100 h-100">
+                    <h1 className=" text-white w-auto"> Loading...</h1>
+                </div>}
         </>
     )
 }

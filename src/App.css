@@ -1,5 +1,5 @@
 
-.btn-custom-gradient{
+.btn-custom-gradient,.btn-outline-custom-nav{
   background: linear-gradient(90deg,rgb(48, 48, 207),rgb(11, 180, 248)) !important;
   cursor: pointer !important;
 
@@ -24,4 +24,13 @@ background: transparent !important;
 
 .cursor-pointer{
   cursor: pointer !important;
+}
+
+@media screen and (max-width:768px){
+  .nav-link-custom.text-white,.btn-outline-custom-nav{
+color: black !important;
+  }
+  h1{
+    font-size: 50px !important;
+  }
 }

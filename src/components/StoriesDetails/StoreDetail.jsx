@@ -73,7 +73,7 @@ export const StoreDetail = () => {
                         <div className=" py-2 d-flex justify-content-around text-white"> <h3 style={{color: "rgb(48, 48, 207)",}}>{bigStory?.Storytitle} <sup className="text-white">(Noun)</sup></h3> </div>
 
                         <div className=" text-white text-wrap text-break">
-                            <p>{bigStory?.Storyttext}</p>
+                            <p>{bigStory?.Storyitext}</p>
                         </div>
 
                         <div className=" pb-3 w-100 d-flex justify-content-center">
